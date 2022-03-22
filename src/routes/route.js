@@ -1,6 +1,6 @@
 const express = require('express');
 const { Router } = require('express');
-const collageController = require('../Controller/collageController')
+const collageController = require('../Controller/collegeController')
 const internController = require('../Controller/internController')
 const router = express.Router();
 
@@ -10,7 +10,7 @@ router.post("/colleges", collageController.Collage)
 
 router.post('/interns', internController.Intern)
 
-router.get('/collegeDetail', internController.getDetail)
+router.get('/collegeDetail', internController.collegeDetail)
 
 
 
